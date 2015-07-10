@@ -1,0 +1,4 @@
+grep "Summary" *.meta | cut -d ',' -f 2-3
+grep "web100clt" *.meta -C 4 | grep Summary | cut -d ',' -f 2-3
+grep "NDTjs" *.meta -C 4 | grep Summary | cut -d ',' -f 2-3
+
