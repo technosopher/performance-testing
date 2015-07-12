@@ -1,0 +1,3 @@
+[submodule "ndt-javascript"]
+	path = ndt-javascript
+	url = https://github.com/m-lab/ndt-javascript

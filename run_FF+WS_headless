@@ -1,0 +1,8 @@
+#!/bin/bash
+#SETUP:
+#yum install firefox xorg-x11-server-Xvfb
+#Xvfb :19 -screen 0 1024x768x16 &
+
+pkill firefox
+DISPLAY=:19 firefox --new-window "http://files.opentechinstitute.org/~mccarthy/ndt-javascript-client/test.html" &
+sleep 40

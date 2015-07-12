@@ -1,0 +1,14 @@
+#!/bin/bash
+#Usage: ./run_serial <Test #1> <Test#2> <# of interleaved serial tests you want to run>
+i=0
+while true; do
+if [[ $((i)) -gt $3 ]]; then
+ exit
+fi
+$1
+$2
+sleep 5
+i=$((i+1))
+echo "$i tests run so far..."
+done
+
